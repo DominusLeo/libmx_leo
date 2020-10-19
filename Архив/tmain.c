@@ -659,30 +659,49 @@
      return swap;
  }*/
 
+static void  print_unicode_str(char *str) {
+    int *arr = (int *)malloc(2);
+
+    for (int i = 0; str[i]; i++) {
+        for (int j = 0; mx_isdigit(str[i]); i++, j++) {
+            arr = mx_realloc(arr, j);
+            arr[j] = mx_atoi(&str[i]);
+            //printf("num = %d\n", );
+            mx_print_unicode(mx_atoi(&str[i]));
+        }
+            mx_printchar(str[i]);
+
+    }
+}
 
 int main (int argc, char *argv[]) {
     int x;
 
-    if (argc)
+    if (argc) {
         if (argv)
             x = 0;
+        x = 1;
+    }
+//    char *str_0 = "937 4053 AAAAA";
+    char *str_0 = "\n------------------------------------------Mx_Print_937_4053----------------------------\n\n";
+    print_unicode_str(str_0);
 
-    mx_printstr(" **********************\n "
-                "*\tUTILS PACK    *\n "
-                "**********************\n\n");
-//
-    mx_printstr("------------------------------------------Mx_Print_unicode----------------------------\n\n");
-    mx_printstr("126 (~) = "); mx_print_unicode(126); mx_printstr("\n");
-    mx_printstr("33 (!) = "); mx_print_unicode(33); mx_printstr("\n");
-    mx_printstr("937 (OMEGA) = "); mx_print_unicode(937); mx_printstr("\n");
-    mx_printstr("2538 (8) = "); mx_print_unicode(2538); mx_printstr("\n");
-    mx_printstr("128579 (smile_down) = "); mx_print_unicode(128579); mx_printstr("\n");
-    mx_printstr("4053 (swastik) = "); mx_print_unicode(4053); mx_printstr("\n");
-    mx_printstr("1 bytes:\n"); mx_print_unicode(65); mx_printstr("\n");
-    mx_printstr("2 bytes:\n"); mx_print_unicode(162); mx_printstr("\n");
-    mx_printstr("3 bytes:\n"); mx_print_unicode(8364); mx_printstr("\n");
-    mx_printstr("4 bytes:\n"); mx_print_unicode(128525); mx_printstr("\n");
-    mx_printstr("4 bytes:\n"); mx_print_unicode(78008); mx_printstr("\n");
+//    mx_printstr(" **********************\n "
+//                "*\tUTILS PACK    *\n "
+//                "**********************\n\n");
+////
+//    mx_printstr("------------------------------------------Mx_Print_unicode----------------------------\n\n");
+//    mx_printstr("126 (~) = "); mx_print_unicode(126); mx_printstr("\n");
+//    mx_printstr("33 (!) = "); mx_print_unicode(33); mx_printstr("\n");
+//    mx_printstr("937 (OMEGA) = "); mx_print_unicode(937); mx_printstr("\n");
+//    mx_printstr("2538 (8) = "); mx_print_unicode(2538); mx_printstr("\n");
+//    mx_printstr("128579 (smile_down) = "); mx_print_unicode(128579); mx_printstr("\n");
+//    mx_printstr("4053 (swastik) = "); mx_print_unicode(4053); mx_printstr("\n");
+//    mx_printstr("1 bytes:\n"); mx_print_unicode(65); mx_printstr("\n");
+//    mx_printstr("2 bytes:\n"); mx_print_unicode(162); mx_printstr("\n");
+//    mx_printstr("3 bytes:\n"); mx_print_unicode(8364); mx_printstr("\n");
+//    mx_printstr("4 bytes:\n"); mx_print_unicode(128525); mx_printstr("\n");
+//    mx_printstr("4 bytes:\n"); mx_print_unicode(78008); mx_printstr("\n");
 //
 //
 //    // printf("------------------------------------------PRINTSTR-------------------------------\n\n\n");

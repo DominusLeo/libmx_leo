@@ -6,7 +6,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <limits.h>
-#include <malloc/malloc.h>
+#include <malloc.h>
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -89,6 +89,7 @@ bool mx_islower(int c);
 bool mx_isupper(int c);
 bool mx_isspace(char c);
 int my_sort_arr_int(int *arr, int size);
+int mx_atoi(const char *str);
 void mx_sort_arr_char(char *arr[], int size);//my own
 int mx_quicksort_int(int *arr, int left, int right);//my own
 
