@@ -6,7 +6,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <limits.h>
-#include <malloc.h>
+//#include <malloc.h>
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -92,7 +92,7 @@ int my_sort_arr_int(int *arr, int size);
 int mx_atoi(const char *str);
 void mx_sort_arr_char(char *arr[], int size);//my own
 int mx_quicksort_int(int *arr, int left, int right);//my own
-void print_unicode_str(char *str);//my own
+void mx_print_unicode_str(char *str);//my own
 
 //void mx_printerr(const char *s);
 

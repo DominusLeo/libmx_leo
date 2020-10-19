@@ -1,6 +1,6 @@
 #include "libmx.h"
 
-void print_unicode_str(char *str) {
+void mx_print_unicode_str(char *str) {
     for (int i = 0; str[i]; i++) {
         if (mx_isdigit(str[i])) {
             mx_print_unicode(mx_atoi(&str[i]));
