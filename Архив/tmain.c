@@ -659,20 +659,7 @@
      return swap;
  }*/
 
-static void  print_unicode_str(char *str) {
-    int *arr = (int *)malloc(2);
 
-    for (int i = 0; str[i]; i++) {
-        for (int j = 0; mx_isdigit(str[i]); i++, j++) {
-            arr = mx_realloc(arr, j);
-            arr[j] = mx_atoi(&str[i]);
-            //printf("num = %d\n", );
-            mx_print_unicode(mx_atoi(&str[i]));
-        }
-            mx_printchar(str[i]);
-
-    }
-}
 
 int main (int argc, char *argv[]) {
     int x;
@@ -683,8 +670,8 @@ int main (int argc, char *argv[]) {
         x = 1;
     }
 //    char *str_0 = "937 4053 AAAAA";
-    char *str_0 = "\n------------------------------------------Mx_Print_937_4053----------------------------\n\n";
-    print_unicode_str(str_0);
+    //char *str_0 = "\n------------------------------------------Mx_Print_937_4053----------------------------\n\n";
+    print_unicode_str("\n------------------------------------------Mx_Print_937_4053----------------------------\n\n");
 
 //    mx_printstr(" **********************\n "
 //                "*\tUTILS PACK    *\n "
@@ -734,7 +721,7 @@ int main (int argc, char *argv[]) {
 //     printf("------------------------------------------------Mx_sqrt--------------------------------------\n");
 //     printf ("%d\t", mx_sqrt(21));   printf("21\n");
 //     printf ("%d\t", mx_sqrt(121));  printf("121\n");
-//     printf ("%d\t", mx_sqrt(4));    printf("4\n");
+//     printf ("%d\t", mx_sqrt(4));  mx_atoi(&str[i])  printf("4\n");
 //     printf ("%d\t", mx_sqrt(-6));    printf("-6\n");
 //     printf ("%d\t", mx_sqrt(9));    printf("9\n");
 //     printf ("%d\t", mx_sqrt(4832)); printf("4832\n");
