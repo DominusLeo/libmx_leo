@@ -622,19 +622,32 @@ int main(int argc, char *argv[]) {
 //             sort_new_list = sort_new_list->next;
 //         }
 //         mx_printstr("\n");
-////
-////     mx_printstr("\n\n----------------MX_ATOI-------------------\n");
-////     mx_printint(atoi("-2147483648")); mx_printstr("\n");
-////     mx_printint(atoi("-11")); mx_printstr("\n");
-////     mx_printint(atoi("-1")); mx_printstr("\n");
-////     mx_printint(atoi("0")); mx_printstr("\n");
-////     mx_printint(atoi("1")); mx_printstr("\n");
-////     mx_printint(atoi("11")); mx_printstr("\n");
-////     mx_printint(atoi("2147483647")); mx_printstr("\n");
-////     mx_printint(atoi("-9223372036854775809")); mx_printstr("\n");
-////     mx_printint(atoi("-9223372036854775809")); mx_printstr("\n");
-////     mx_printint(atoi("9223372036854775806")); mx_printstr("\n");
-////     mx_printint(atoi("9223372036854775806")); mx_printstr("\n");
+
+     mx_printstr("\n\n----------------MX_ATOI-------------------\n");
+     mx_printint(atoi("-2147483648")); mx_printstr("\n");
+     mx_printint(atoi("-11")); mx_printstr("\n");
+     mx_printint(atoi("-1")); mx_printstr("\n");
+     mx_printint(atoi("0")); mx_printstr("\n");
+     mx_printint(atoi("1")); mx_printstr("\n");
+     mx_printint(atoi("11")); mx_printstr("\n");
+     mx_printint(atoi("2147483647")); mx_printstr("\n");
+     mx_printint(atoi("-9223372036854775809")); mx_printstr("\n");
+     mx_printint(atoi("-9223372036854775809")); mx_printstr("\n");
+     mx_printint(atoi("9223372036854775806")); mx_printstr("\n");
+     mx_printint(atoi("9223372036854775806")); mx_printstr("\n");
+
+    mx_printstr("\n\n----------------MX_ATOI-------------------\n");
+    mx_printint(mx_atoi("-2147483648")); mx_printstr("\n");
+    mx_printint(mx_atoi("-11")); mx_printstr("\n");
+    mx_printint(mx_atoi("-1")); mx_printstr("\n");
+    mx_printint(mx_atoi("0")); mx_printstr("\n");
+    mx_printint(mx_atoi("1")); mx_printstr("\n");
+    mx_printint(mx_atoi("11")); mx_printstr("\n");
+    mx_printint(mx_atoi("2147483647")); mx_printstr("\n");
+    mx_printint(mx_atoi("-9223372036854775809")); mx_printstr("\n");
+    mx_printint(mx_atoi("-9223372036854775809")); mx_printstr("\n");
+    mx_printint(mx_atoi("9223372036854775806")); mx_printstr("\n");
+    mx_printint(mx_atoi("9223372036854775806")); mx_printstr("\n");
 ////
 //     system("leaks -q a.out");
 //}
