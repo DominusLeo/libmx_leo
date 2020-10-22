@@ -695,7 +695,7 @@ int main(int argc, char *argv[]) {
     mx_printstr("2 bytes:\n"); mx_print_unicode(162); mx_printstr("\n");
     mx_printstr("3 bytes:\n"); mx_print_unicode(8364); mx_printstr("\n");
     mx_printstr("4 bytes:\n"); mx_print_unicode(128525); mx_printstr("\n");
-    mx_printstr("4 bytes:\n"); mx_print_unicode(78008); mx_printstr("\n");
+    mx_printstr("penis bytes:\n"); mx_print_unicode(78008); mx_printstr("\n");
 //
 //
 //    // printf("------------------------------------------PRINTSTR-------------------------------\n\n\n");
@@ -799,15 +799,15 @@ int main(int argc, char *argv[]) {
     for (int i = 0; i < 102; i++)
         printf("%s\n", arr_x[i]);
 
-//    char *arr_qs1[] = {"DMC", "Clint Eastwood", "Dr BRown", "Einstein", "Jessica", "Biff Tannen"};
-//    int size_qs1 = 6;
-//    printf("\nswap = %d\n", mx_quicksort(arr_qs1, 0, 5));
-////    printf("\nswap = %d\n", my_char_bulb(arr1, size1));
-//    for (int i = 0; i < size_qs1; i++)
-//        printf("%s\n", arr_qs1[i]);
-//
-//    char *arr_qs[] = {"Michelangelo", "Donatello", "Leonardo", "Raphael"};
-////    int size = 4;
+    char *arr_qs1[] = {"DMC", "Clint Eastwood", "Dr BRown", "Einstein", "Jessica", "Biff Tannen"};
+    int size_qs1 = 6;
+    printf("\nswap = %d\n", mx_quicksort(arr_qs1, 0, 5));
+//    printf("\nswap = %d\n", my_char_bulb(arr1, size1));
+    for (int i = 0; i < size_qs1; i++)
+        printf("%s\n", arr_qs1[i]);
+
+   // char *arr_qs[] = {"Michelangelo", "Donatello", "Leonardo", "Raphael"};
+//    int size = 4;
 //
 //    printf("\nswap = %d\n", mx_quicksort(arr_qs, 0, 3));
 ////    printf("\nswap = %d\n", my_char_bulb(arr, size));
